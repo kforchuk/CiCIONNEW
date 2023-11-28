@@ -1,0 +1,734 @@
+/* CONTENTS 
+    1   GENERAL DOCUMENT  
+            1A DECORATIVE ELEMENTS
+    2   HEADER BANNER 
+            2A HEADER BANNER SETTINGS
+            2B HEADER BANNER MEDIA QUERIES
+    3   HOW DOES IT WORK 
+            3A HOW DOES IT WORK SETTINGS
+            3B HOW DOES IT WORK MEDIA QUERIES
+    4   PARALLAX
+            4A PARALLAX SETTINGS
+            4B PARALLAX MEDIA QUERIES
+    5   FEATURES/BENEFITS
+            5A FEATURES SETTINGS
+            5B BENEFITS SETTINGS
+            5C FEATURES/BENEFITS MEDIA QUERIES
+    6   PRODUCTS
+            6A PRODUCTS SETTINGS
+            6B PRODUCTS MEDIA QUERIES
+    7   FAQS
+            7A FAQ SETTINGS
+            7B FAQ MEDIA QUERIES
+    8   PARTNERS
+            8A PARTNERS SETTINGS
+            8B PARTNERS MEDIA QUERIES
+*/
+
+/* =================  1 GENERAL DOCUMENT    ==================== */
+
+/* =================  1A DECORATIVE ELEMENTS    ==================== */
+
+.bars1{
+    background-color: #EFD0D6;
+    height: 1.5rem;
+}
+
+.bars2{
+    background-color: #BFB0DB;
+    height: .75rem;
+}
+
+.bars3{
+    background-color: #9777C7;
+    height: .75rem;
+}
+
+.bars4{
+    background-color: #A285CD;
+    height: .75rem;
+}
+
+.blue-bars1 {
+    background-color:#aecdda; 
+    height: 2rem;
+}
+
+.blue-bars2{
+    background-color: #99c0d0;
+    height: .5rem;
+}
+
+.blue-bars3{
+    background-color: #b3d0dc;
+    height:0.5rem;
+}
+
+.blue-bars4{
+    background-color: #a4c7d5;
+    height:1.6rem;
+}
+
+.blue-bars5{
+    background-color: #d4e4eb;
+    height:1rem;
+}
+
+/* =================  2 HEADER BANNER    ==================== */
+
+/* =================  2A HEADER BANNER SETTINGS    ==================== */
+
+#header-banner{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    justify-content: center;
+    gap:0;
+}
+.box1 {
+    background-color: #409;
+    color:#fff;
+    background-image: url(CIC-HOME-INK-WATER.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-weight: 100;
+    margin-left: 1.5em;
+}
+.h1-emphasis {
+    color:#ff7f75;
+    font-weight: 700;
+    margin-bottom: -1em;
+}
+
+.box4 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff7f75;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    margin-bottom: .35rem;
+}
+
+.box4 p {
+    font-kerning:normal;
+    line-height: 1.5;
+    font-size: clamp(.75rem, 1.5vw, 1.5rem);
+    margin: auto;
+    padding: 6rem;
+}
+
+#header-banner img{
+    width:100%
+}
+
+.cta-header-banner {
+    border-radius: 5px;
+    border-color: #409;
+    color:#fff;
+    background-color: #409;
+    width: 175px;
+    padding: 1rem;
+}
+
+.cta-header{
+    position: relative;
+    bottom: 6rem;
+    left: 30rem;
+}
+
+/* =================  2B HEADER BANNER MEDIA QUERIES    ==================== */
+
+@media (max-width:1700px){
+    .cta-header{
+        position: relative;
+        bottom: 5rem;
+        left: 25rem;
+    }
+}
+
+@media (max-width:1650px){
+    .box4 p{
+        padding: 4rem;
+    }
+
+    .cta-header{
+        position: relative; 
+        bottom: 4rem;
+        left: 20rem;
+    }
+}
+
+@media (max-width:1300px){
+    .cta-header{
+        position: relative;
+        bottom: 3rem;
+        left: 15rem;
+    }
+    .box4 p{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:1150px){
+    .cta-header-banner {
+        width: 125px;
+        padding: .5rem;
+        font-size: .7rem;
+    }
+    .box4 p{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:940px){
+    .cta-header {
+        position:absolute;
+        bottom: 2rem;
+        left: 12rem;
+    }
+}
+
+@media (max-width:950px){
+    .box4 p{
+        padding: 2rem;
+    }
+
+    .cta-header{
+        position: relative;
+        bottom: 1rem;
+        left: 10rem;
+    }
+
+    .cta-header-banner {
+        width: 100px;
+        padding: .25rem;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width:715px){
+    .box4 p{
+        padding: 1rem;
+    }
+    .cta-header{
+        position: relative;
+        left: 7rem;
+        bottom: .5rem;
+    }
+}
+
+@media (max-width: 635px) {
+    .box4 p{
+        font-size: .6rem;
+        padding: .6rem;
+    }
+
+    .cta-header{
+        position:relative;
+        left: 6rem;
+        bottom: .25rem;
+    }
+}
+
+@media (max-width: 515px) {
+    .box4 p{
+        padding: .2rem;
+    }
+    .cta-header-banner {
+        font-size: .45rem;
+        width: 90px;
+    }
+
+    .cta-header{
+        position:relative;
+        left: 3rem;
+        bottom: 0rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 465px){
+    .box4 p{
+        font-size: .45rem;
+    }
+    .cta-header-banner {
+        padding: .1rem;
+    }
+}
+
+@media (max-width: 380px){
+    h2 {
+        font-size: 1rem;
+    }
+
+    .cta-header {
+        position:relative;
+        left:1rem;
+    }
+}
+
+/* =================  3 HOW DOES IT WORK    ==================== */
+
+/* =================  3A HOW DOES IT WORK SETTINGS    ==================== */
+
+#how-does-it-work{
+    font-family: Montserrat, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5fr;
+    grid-template-areas: 
+        "a1" "a2" "a3"
+        "b1" "b2" "b3"
+        "c1" "c2" "c3"
+    ;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.grid-title {
+    grid-area: a1;
+    grid-column: span 3;
+}
+.point1 {
+    grid-area: b1;
+    display:flex;
+}
+.point2 {
+    grid-area: b2;
+    display:flex;
+}
+.point3 {
+    grid-area: b3;
+    display:flex;
+}
+.point4 {
+    grid-area: c1;
+    grid-column: span 2;
+    display:flex;
+
+}
+.point5 {
+    grid-area: c3;
+    display:flex;
+}
+#how-does-it-work h2{
+    color:#409;
+    font-size:clamp(1rem, 5vw, 5rem);
+}
+
+#how-does-it-work img{
+    height: 4rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+#how-does-it-work p{
+    font-size: clamp(.75rem, 1.5vw, 1.5rem);
+}
+/* =================  3B HOW DOES IT MEDIA QUERIES    ==================== */
+
+@media (max-width:900px) {
+    #how-does-it-work img{
+        height: 2.5rem;
+    }
+}
+@media (min-width: 375px){
+    #how-does-it-work{
+    grid-template-areas: 
+        "a1 a2 a3"
+        "b1 b2 b3"
+        "c1 c2 c3";
+    }
+}
+
+@media (max-width:450px) {
+    #how-does-it-work img{
+        height: 1.75rem;
+    }
+
+    #how-does-it-work p {
+        font-size: .6rem;
+    }
+    #how-does-it-work h2{
+        color:#409;
+        font-size: 1rem;
+    }
+}
+
+/* =================  4 PARALLAX    ==================== */
+
+.parallax{
+    background-image: url("CIC-SCHOOLS-PARALLAX.webp");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* =================  4B PARALLAX MEDIA QUERIES    ==================== */
+
+@media (prefers-reduced-motion){
+    .parallax{
+        background-image: url("CIC-SCHOOLS-PARALLAX.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: fit-content;
+    }
+}
+/* =================  5 FEATURES/BENEFITS    ==================== */
+
+.features-benefits{
+    display:flex;
+}
+.features-benefits h2{
+    font-size: 3rem;
+    color:#409;
+    font-weight: 300;
+}
+
+/* =================  6 PRODUCTS    ==================== */
+
+.product-offerings {
+    font-family: montserrat, sans-serif;
+}
+
+.product-header {
+    position:relative;
+    left: 48.75rem;
+    top:10rem;
+}
+
+.product-header-a{
+    position:relative;
+    top: 5.75rem;
+    color:#409;
+    font-weight: 200;
+    font-kerning: auto;
+}
+
+.product-header-b {
+    color:#88b3cd;
+    font-weight: 600;
+    font-kerning: auto;
+}
+.offerings-grid{
+    background-color: #409;
+    background-image: url(CIC-HOME-INK-WATER.webp);
+    background-position: top-left;
+    background-repeat: no-repeat;
+    display:grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'd1' 'd2' 'd3' 'e1' 'e2' 'e3' 'f1' 'f2' 'f3';
+    gap: 1rem;
+    padding:5rem;
+    justify-content: center;
+    padding-bottom: 12rem;
+}
+
+.offerings-grid img{
+    width:100%;
+}
+.img1 {
+    grid-area: d1;
+}
+
+.offerings {
+    grid-area: d2;
+    grid-column: span 2;
+    color:#BFB0DB;
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.cta-products {
+    background-color: #88b3cd;
+    color:#409;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: none;
+    padding: .25rem .5rem;
+}
+
+/* =================  6B PRODUCTS MEDIA QUERIES    ==================== */
+@media (max-width: 1650px){
+    .product-header {
+        position:relative;
+        left: 42rem;
+        top:10rem;
+    }
+}
+
+@media (max-width: 1580px){
+    .product-header {
+        position:relative;
+        left: 40rem;
+        top:9.5rem;
+    }
+}
+
+@media (max-width:1500px){
+    .product-header {
+        position:relative;
+        left: 38rem;
+        top:8.5rem;
+    }
+}
+
+@media (max-width:1420px){
+    .product-header {
+        position:relative;
+        left: 35rem;
+        top:7.5rem;
+    }
+}
+
+@media (max-width:1380px){
+    .product-header {
+        position:relative;
+        left: 34rem;
+        top:7rem;
+    }
+    
+    .product-header-a{
+        position:relative;
+        top: 5rem;
+        color:#409;
+        font-weight: 200;
+        font-kerning: auto;
+    }
+    
+    .product-header-b {
+        color:#ff7f75;
+        font-weight: 600;
+        font-kerning: auto;
+        position: relative;
+        top: 1rem;
+    }
+    .offerings {
+        color:#ff7f75;
+    }
+
+}
+
+@media (max-width:1200px){
+    .product-header {
+        position:relative;
+        left: 28rem;
+        top:5.5rem;
+    }
+}
+
+@media (max-width:1050px){
+    .product-header {
+        position:relative;
+        left: 24rem;
+        top:4.5rem;
+    }
+}
+
+@media (max-width: 950px){
+    .product-header {
+        position:relative;
+        left: 22rem;
+        top:3.5rem;
+    }
+    .product-header-a{
+        position:relative;
+        top: 4.5rem;
+        color:#409;
+        font-weight: 200;
+        font-kerning: auto;
+    }
+    
+    .product-header-b {
+        color:#ff7f75;
+        font-weight: 600;
+        font-kerning: auto;
+        position: relative;
+        top: 2rem;
+    }
+}
+
+@media (max-width:790px) {
+    .product-header {
+        position:relative;
+        left: 17rem;
+        top:2.5rem;
+    }
+}
+
+@media (max-width: 690px) {
+    .product-header {
+        position:relative;
+        left: 10rem;
+        top:1.5rem;
+    }
+
+    .cta-products {
+        font-size: .75rem;
+    }
+
+    .offerings {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .product-header {
+        position:relative;
+        left: 8rem;
+        top:1.5rem;
+    }
+    .product-header-a{
+        position:relative;
+        top: 3rem;
+        color:#409;
+        font-weight: 200;
+        font-kerning: auto;
+    }
+
+    .cta-products {
+        font-size: .65rem;
+    }
+
+    .offerings {
+        font-size: .75rem;
+    }
+    .offerings-grid{
+        gap: 1rem;
+        padding:2rem;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width:390px){
+    .product-header h2{
+        font-size: 1.25rem;
+    }
+    .product-header-a{
+        position:relative;
+        top: 2.4rem;
+        color:#409;
+        font-weight: 200;
+        font-kerning: auto;
+    }
+    .product-header-b {
+        color:#ff7f75;
+        font-weight: 600;
+        font-kerning: auto;
+        position: relative;
+        top: 1.5rem;
+    }
+}
+
+@media (min-width: 375px) {
+    .offerings-grid{
+        grid-template-areas: 
+        'd1 d2 d3'
+        'e1 e2 e3'
+        'f1 f2 f3';
+    }
+}
+
+/* =================  7 FAQS    ==================== */
+
+.accordion {
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: Rubik, sans-serif;
+    transition: 0.4s;
+    width:60%;
+    text-align: left;
+    display:flex;
+    align-items: center;
+}
+
+.accordion img{
+    width:5%;
+}
+
+.accordion:hover {
+    background-color: rgba(136, 179, 205, .2);
+}
+
+.panel {
+    padding:0 7rem;
+    font-family: Rubik, sans-serif;
+    font-size: 1rem;
+    display:none;
+    overflow:hidden;
+    width:60%;
+}
+
+.faq-section h2{
+    position:relative;
+    top: -8rem;
+    right: 5rem;
+    color:#B1D1DE;
+    font-weight: 200;
+}
+
+.faq-section h2 b {
+    font-weight: 700;
+}
+
+.faq-container {
+    margin-top: -10rem;
+}
+
+/* =================  8 PARTNERS    ==================== */
+
+.partners h2{
+    color:#8BB7C9;
+    font-weight: 200;
+    position: relative;
+    top: 4.9rem;
+}
+.partners-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.partners-card{
+    display:flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    padding: 1.5rem;
+}
+
+.logo-name {
+    display:flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.logo-name img {
+    padding: 0 1.5rem;
+
+}
+
+.logos-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 5rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logos-bar img {
+    padding: 0 4rem;
+}
